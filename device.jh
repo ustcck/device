@@ -1,0 +1,73 @@
+//
+// An entity model for an online shop
+//
+
+application {
+  config {
+    baseName device,
+    applicationType monolith,
+    authenticationType jwt
+    packageName com.lenovo.cloud.device,
+    devDatabaseType mysql,
+    prodDatabaseType mysql,
+    cacheProvider hazelcast,
+    buildTool maven,
+    clientFramework angular,
+    useSass true,
+    testFrameworks [protractor],
+    nativeLanguage zh-cn,
+    languages [en, zh-cn]
+  }
+  entities *
+}
+
+entity PatrolDevice {
+    name String required,
+    source String,
+    serialNumber String,
+    installDate LocalDate,
+    status Integer required,
+    deviceModel String,
+    createTime LocalDate required,
+    updateTime LocalDate required,
+    remark String,
+}
+
+entity PowerDevice {
+    area Integer,
+    space String,
+    mainPart String,
+    subPart String,
+    name String required,
+    recognizeType Integer required,
+    recognizeContent Integer required,
+    site String,
+    line String,
+    source String,
+    serialNumber String,
+    installDate LocalDate,
+    status Integer required,
+    deviceModel String,
+    createTime LocalDate required,
+    updateTime LocalDate required,
+    remark String,
+}
+
+entity Threshold {
+    lowLimit Double,
+    highLimit Double,
+    openCloseIndicator Integer,
+}
+
+relationship OneToOne {
+  PowerDevice{threshold} to Threshold
+}
+
+relationship ManyToMany {
+	PatrolDevice{powerDevice(name)} to PowerDevice{patrolDevice}
+}
+
+filter PatrolDevice, PowerDevice, Threshold
+paginate PatrolDevice, PowerDevice, Threshold with pagination
+
+service all with serviceClass

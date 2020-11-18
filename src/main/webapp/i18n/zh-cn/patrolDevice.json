@@ -1,0 +1,31 @@
+{
+  "deviceApp": {
+    "patrolDevice": {
+      "home": {
+        "title": "Patrol Devices",
+        "createLabel": "创建新 Patrol Device",
+        "createOrEditLabel": "创建或编辑 Patrol Device",
+        "notFound": "No Patrol Devices found"
+      },
+      "created": "Patrol Device {{ param }} 创建成功",
+      "updated": "Patrol Device {{ param }} 更新成功",
+      "deleted": "Patrol Device {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Patrol Device {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Patrol Device"
+      },
+      "name": "Name",
+      "source": "Source",
+      "serialNumber": "Serial Number",
+      "installDate": "Install Date",
+      "status": "Status",
+      "deviceModel": "Device Model",
+      "createTime": "Create Time",
+      "updateTime": "Update Time",
+      "remark": "Remark",
+      "powerDevice": "Power Device"
+    }
+  }
+}

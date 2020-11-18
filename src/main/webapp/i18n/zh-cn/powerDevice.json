@@ -1,0 +1,40 @@
+{
+  "deviceApp": {
+    "powerDevice": {
+      "home": {
+        "title": "Power Devices",
+        "createLabel": "创建新 Power Device",
+        "createOrEditLabel": "创建或编辑 Power Device",
+        "notFound": "No Power Devices found"
+      },
+      "created": "Power Device {{ param }} 创建成功",
+      "updated": "Power Device {{ param }} 更新成功",
+      "deleted": "Power Device {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Power Device {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Power Device"
+      },
+      "area": "Area",
+      "space": "Space",
+      "mainPart": "Main Part",
+      "subPart": "Sub Part",
+      "name": "Name",
+      "recognizeType": "Recognize Type",
+      "recognizeContent": "Recognize Content",
+      "site": "Site",
+      "line": "Line",
+      "source": "Source",
+      "serialNumber": "Serial Number",
+      "installDate": "Install Date",
+      "status": "Status",
+      "deviceModel": "Device Model",
+      "createTime": "Create Time",
+      "updateTime": "Update Time",
+      "remark": "Remark",
+      "threshold": "Threshold",
+      "patrolDevice": "Patrol Device"
+    }
+  }
+}

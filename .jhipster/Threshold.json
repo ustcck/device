@@ -1,0 +1,29 @@
+{
+  "name": "Threshold",
+  "fields": [
+    {
+      "fieldName": "lowLimit",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "highLimit",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "openCloseIndicator",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201118090518",
+  "entityTableName": "threshold",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["device"]
+}

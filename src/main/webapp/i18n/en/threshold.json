@@ -1,0 +1,24 @@
+{
+  "deviceApp": {
+    "threshold": {
+      "home": {
+        "title": "Thresholds",
+        "createLabel": "Create a new Threshold",
+        "createOrEditLabel": "Create or edit a Threshold",
+        "notFound": "No Thresholds found"
+      },
+      "created": "A new Threshold is created with identifier {{ param }}",
+      "updated": "A Threshold is updated with identifier {{ param }}",
+      "deleted": "A Threshold is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Threshold {{ id }}?"
+      },
+      "detail": {
+        "title": "Threshold"
+      },
+      "lowLimit": "Low Limit",
+      "highLimit": "High Limit",
+      "openCloseIndicator": "Open Close Indicator"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity PatrolDevice.
+    -->
+    <changeSet id="20201118090318-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="patrol_device_id"
+                                 baseTableName="patrol_device_power_device"
+                                 constraintName="fk_patrol_device_power_device_patrol_device_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="patrol_device"/>
+
+        <addForeignKeyConstraint baseColumnNames="power_device_id"
+                                 baseTableName="patrol_device_power_device"
+                                 constraintName="fk_patrol_device_power_device_power_device_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="power_device"/>
+        
+    </changeSet>
+</databaseChangeLog>
