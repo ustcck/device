@@ -104,6 +104,14 @@ public class PatrolDeviceResource {
         return ResponseEntity.ok().headers(headers).body(page.getContent());
     }
 
+    @GetMapping("/patrol-devices-ships")
+    public ResponseEntity<List<PatrolDevice>> findAllWithEagerRelationships(Pageable pageable) {
+        log.debug("REST request to get PatrolDevices by pageable: {}", pageable);
+        Page<PatrolDevice> page = patrolDeviceService.findAllWithEagerRelationships(pageable);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(ServletUriComponentsBuilder.fromCurrentRequest(), page);
+        return ResponseEntity.ok().headers(headers).body(page.getContent());
+    }
+
     /**
      * {@code GET  /patrol-devices/count} : count all the patrolDevices.
      *
